@@ -1,0 +1,519 @@
+/*  styling full html page */
+html {
+  background-color: grey;
+  font-family: 'Itim', cursive;
+}
+/* styling all h1 tags  */
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+/* top navbar style */
+.topbar {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,1fr);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      border-style: solid;
+      padding: 0px;
+      font-size: 40px;
+      background-color: lightgrey;
+      z-index: 1;
+}
+/* bottom navbar styling  */
+.bottombar {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(1,1fr);
+      position:fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      border-style: solid;
+      padding: 0px;
+      font-size: 10px;
+      background-color: lightgrey;
+      z-index: 0;
+}
+/* styling all navbars  */
+.navbar {
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition: 1s;
+}
+/* styling when navbar is hoverd over  */
+.navbar:hover {
+      color: white;
+      display: block;
+      background-color: black;
+      background-size: 100%;
+}
+
+/* styling an id section of a large area  */
+#page {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-column-gap: 55px;
+  grid-row-gap: 20px;
+}
+/*  styling an id section of a large area */
+#page2 {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 50px;
+}
+
+/* navbar styling on page 1 */
+.sidebar {
+  grid-column: 1;
+  grid-row: 1/5;
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  border-style: solid;
+  width: 90%;
+  height: 250px;
+  border-style: solid;
+  border-radius: 20px;
+  padding-right: 45px;
+  z-index: 0;
+}
+/*  more navbar styling on page 2 */
+.sidebar2 {
+  grid-column: 1;
+  grid-row: 1/5;
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  border-style: solid;
+  width: 90%;
+  height: 600px;
+  border-style: solid;
+  border-radius: 20px;
+  padding-right: 45px;
+  z-index: 0;
+}
+/* stling list class  */
+.list {
+  list-style-type: none;
+}
+/* inner nav styling */
+.bar {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+  background-color: grey;
+}
+/* hover bar styling */
+.bar:hover {
+  text-decoration: underline;
+}
+/* styling for navbar on page 2  */
+.bar2 {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+}
+/*  hover styling on page 2 */
+.bar2:hover {
+  text-decoration: underline;
+}
+/* all img styling */
+.imge {
+  height: 216px;
+  width: 216px;
+  border-style: solid;
+  border-radius: 0;
+  padding-bottom: 0;
+  transition: 1s;
+}
+/* styling for onlick effects of gallery images  */
+.imge:active {
+  height: 300px;
+  width: 300px;
+  border-radius: 0;
+  z-index: 10;
+}
+/* image styling for content page  */
+.imge1 {
+  height: 200px;
+  width: 100%;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+}
+
+/* para class styling  */
+.para {
+  text-align: center;
+  border-style: solid;
+}
+/* conent box styling  */
+.af {
+  grid-row: 2;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.tc {
+  grid-row: 2;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.we {
+  grid-row: 2;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.et {
+  grid-row: 2;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.sm {
+  grid-column: 2/3;
+  grid-row: 4;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.mg {
+  grid-column: 3/4;
+  grid-row: 4;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.rl {
+  grid-column: 4/5;
+  grid-row: 4;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.tb {
+  grid-column: 2/3;
+  grid-row: 6;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.km {
+  grid-column: 3/4;
+  grid-row: 6;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* conent box styling  */
+.tdt {
+  grid-column: 2/3;
+  grid-row: 8;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* para class styling  */
+.para {
+  font-size: 16px;
+  border-style: none;
+}
+/* gallery styling  */
+.gallery {
+  text-align: center;
+  grid-column: 2/6;
+  grid-row: 1/3;
+  height: 10px;
+}
+/* aligning everything in form  */
+.form {
+  text-align: center;
+}
+/* styling class social  */
+.social {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+/* background image to form page  */
+.formimg {
+  background-image: url(images/P3Fwiwa.jpg);
+  background-size: cover;
+}
+/* style all h2 tags  */
+h2 {
+  border-style: solid;
+  background-color: lightgrey;
+}
+/* style all iframes  */
+iframe {
+  height: 200px;
+  width: 200px;
+  border: 0;
+}
+/* making a grid for content page  */
+.tent {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-column-gap: 165px;
+  grid-row-gap: 20px;
+  height: inherit;
+  width: 600px;
+}
+/* style for class heading  */
+.heading {
+  border-style: solid;
+  background-color: lightgrey;
+  grid-row: 1;
+  grid-column: 2/4;
+  text-align: center;
+  font-size: 45px;
+  font-style: bold;
+
+}
+/*  styling class heading2 */
+.heading2 {
+  border-style: solid;
+  background-color: lightgrey;
+  grid-row: 3;
+  grid-column: 2/4;
+  text-align: center;
+  font-size: 45px;
+  font-style: bold;
+}
+/* style for class heading 2 */
+.heading3 {
+  border-style: solid;
+  background-color: lightgrey;
+  grid-row: 5;
+  grid-column: 2/4;
+  text-align: center;
+  font-size: 45px;
+  font-style: bold;
+}
+/* style for class heading 4  */
+.heading4 {
+  border-style: solid;
+  background-color: lightgrey;
+  grid-row: 7;
+  grid-column: 2/4;
+  text-align: center;
+  font-size: 45px;
+  font-style: bold;
+}
+/* dropdown button styling  */
+.dropbtn {
+    background-color: lightgrey;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    cursor: pointer;
+    text-align: center;
+    width: 240px;
+    font-size: 30px;
+    font-family: 'Itim', cursive;
+
+}
+/* dropdown styling  */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+/* dropdown content styling  */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    width: 235px;
+    font-size: 20px;
+    margin-left: 21px;
+}
+/* dropdown content link styling  */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* dropdowncontent hover styling  */
+.dropdown-content a:hover {
+  background-color: grey;
+}
+/* dropdown content hoverstyling  */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* dropdown content hoverstyling  */
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+.cl {
+  text-decoration: none;
+  color: black;
+}
+.cl:hover {
+  text-decoration: underline;
+}
+.space {
+  height: 50px;
+}
+.dropimg {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 4%;
+}
+.nav_img_1 {
+  height: 90%;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border-style: solid;
+  border-color: black;
+  transition: 1s;
+}
+.nav_img_2 {
+  height: 90%;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-style: solid;
+  border-color: black;
+  transition: 1s;
+}
+.nav_img_3 {
+  height: 90%;
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  border-style: solid;
+  border-color: black;
+  transition: 1s;
+}
+.nav_img_4 {
+  height: 50%;
+  width: 100%;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 18px;
+  transition: 1s;
+}
+.img_navbar {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+}
+#header_navbar {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+}
+.heads_navbar1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  text-align: center;
+  color: black;
+  font-size: 28px;
+}
+.heads_navbar2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-align: center;
+  color: black;
+  font-size: 28px;
+}
+.heads_navbar3 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  text-align: center;
+  color: black;
+  font-size: 28px;
+}
+.heads_navbar4 {
+  grid-row: 1/2;
+  grid-column: 4/5;
+  text-align: center;
+  color: black;
+  font-size: 28px;
+  margin-bottom: 100px;
+}
+.nav_img_1:hover {
+  opacity: 0.6;
+  z-index: -1;
+  border-color: darkgrey;
+}
+.nav_img_2:hover {
+  opacity: 0.6;
+  z-index: -1;
+  border-color: darkgrey;
+}
+.nav_img_3:hover {
+  opacity: 0.6;
+  z-index: -1;
+  border-color: darkgrey;
+}
+.nav_img_4:hover {
+  opacity: 0.6;
+  z-index: -1;
+  border-color: darkgrey;
+}
