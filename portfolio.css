@@ -1,6 +1,3 @@
-html {
-  background-image: url(images/blackwallpaper.jpg);
-}
 body {
   background-image: url(images/blackwallpaper.jpg);
   font-family: 'Secular One', sans-serif;
@@ -8,19 +5,19 @@ body {
 #front-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(9,1fr);
+  grid-template-rows: repeat(12,1fr);
 }
 #portfolio-image {
   opacity: 0.95;
   height: 100%;
-  max-width: 100%;
-  grid-row: 1/10;
+  width: 100%;
+  grid-row: 1/13;
   grid-column: 1/2;
 }
 #personal-information {
   padding-left: 30px;
   background-image: url(images/blackwallpaper.jpg);
-  grid-row: 1/9;
+  grid-row: 1/12;
   grid-column: 2/3;
   color: white;
 }
