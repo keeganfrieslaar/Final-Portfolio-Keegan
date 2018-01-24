@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Porfolio </title>
+<!-- beggining of styling -->
+<style>
+/* table styling. size,border etc */
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-color: black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+/* style of navbar top with border */
+.navbar {
+  border-style: solid;
+  word-spacing: 500px;
+  font-size: 30px;
+}
+/* bar style color and no underline */
+.bar {
+  text-decoration: none;
+  color: black;
+}
+/* adding underline on hover */
+.bar:hover {
+  text-decoration: underline;
+}
+
+</style>
+
+</head>
+<body>
+  <header>
+    <center>
+      <!-- first heading at top of page -->
+      <h1>Home:</h1>
+    </center>
+  </header>
+<!-- start of division and navbar -->
+  <div class="navbar">
+    <center>
+      <!-- 3 headings in navbar for switching between pages -->
+      <a class="bar" href="index.html#home">Home</a>
+      <a class="bar" href="portfolio.html#portfolio">Portfolio</a>
+      <a class="bar" href="contact.html#contact">Contact</a>
+    </center>
+  </div>
+<!-- second heading showing name -->
+  <h2><center>Keegan Frieslaar</center></h2>
+<!-- start of a table with the home id for the navbar -->
+    <table>
+      <a id="home">
+        <!-- listing my academic achievements in a table -->
+        <h3><center>Academic Achievement:</center></h3>
+          <tr>
+            <th>Primary School:</th>
+            <th>High School:</th>
+            <th>After School:</th>
+          </tr>
+          <tr>
+            <td>Drama Award</td>
+            <td>Englsih Award</td>
+            <td>n/a</td>
+          </tr>
+          <tr>
+            <td>English Award</td>
+            <td>History Award</td>
+            <td>n/a</td>
+          </tr>
+          <tr>
+            <td>History Award</td>
+            <td>Tennis Award</td>
+            <td>n/a</td>
+      </table>
+      <!-- end of list -->
+
+      <br><br>
+<!-- footer start with bottom navbar in that icluses social medias -->
+  <footer class="navbar">
+    <center>
+      <a class="bar" href="https://www.facebook.com/"><img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" alt="facebook" width="50px" height="50px"></a>
+      <a class="bar"  href="https://twitter.com/login?lang=en"><img src="https://www.seoclerk.com/pics/trade3259-1qKqMy1431507808.png" alt="twitter" width="50px" height="50px"></a>
+      <a class="bar"  href="https://www.instagram.com/"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-256.png" alt="instagram" width="50px" height="50px"></a>
+    </center>
+  </footer>
+  <!-- end of footer -->
+</body>
+</html>
