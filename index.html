@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Keegans Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link rel="icon" href="images/keegz.png" type="image/png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div id="front-grid">
+      <img id="portfolio-image" src="images/keegan_portfolio.jpeg" alt="portfolio-img">
+
+      <div id="personal-information">
+        <h2 id="intro-message">Welcome to:</h2>
+        <h1 id="myname">Keegan Frieslaar</h1>
+        <p id="job-title">Junior Web Developer and Gamer</p>
+
+        <table id="contact-information">
+          <tr>
+            <th>Age:</th>
+            <td>19</td>
+          </tr>
+          <tr>
+            <th>Address:</th>
+            <td>4 Hedge Lane, Retreat</td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td>keeganfrieslaar@gmail.com</td>
+          </tr>
+          <tr>
+            <th>Phone:</th>
+            <td>083 457 0974</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="navbar">
+        <a id="home-info" class="navbar-headings" href="#front-grid">Home</a>
+        <a id="about-info" class="navbar-headings">About</a>
+        <a id="education-info" class="navbar-headings">Education</a>
+        <a class="navbar-headings" href="mailto:keeganfrieslaar@gmail.com">Contact</a>
+      </div>
+    </div>
+
+
+    <div id="clients">
+      <h1 id="projects">HTML, CSS, CSS grid and Javascript Projects: </h1>
+      <p id="view">(click images to view projects)</p>
+  <div class="clients-wrap">
+    <ul id="clients-list" class="clearfix">
+      <li>
+        <a href="htmlproject/index.html" target="_blank"><img src="images/htmlp.PNG" alt="Black Ace"></a>
+      </li>
+      <li>
+        <a href="cssproject/index.html" target="_blank"><img src="images/cssp.PNG" alt="First State Bank"></a>
+      </li>
+      <li>
+        <a href="gridproject/index.html" target="_blank"><img src="images/cssgridp.PNG" alt="Custom Aire"></a>
+      </li>
+      <li>
+        <a href="javascriptproject/index.html" target="_blank"><img src="images/jsp.PNG" alt="First State Bank"></a>
+      </li>
+      <li>
+        <a href="htmlproject/index.html" target="_blank"><img src="images/htmlp.PNG" alt="Black Ace"></a>
+      </li>
+      <li>
+        <a href="cssproject/index.html" target="_blank"><img src="images/cssp.PNG" alt="First State Bank"></a>
+      </li>
+      <li>
+        <a href="gridproject/index.html" target="_blank"><img src="images/cssgridp.PNG" alt="Custom Aire"></a>
+      </li>
+      <li>
+        <a href="javascriptproject/index.html" target="_blank"><img src="images/jsp.PNG" alt="First State Bank"></a>
+      </li>
+      <li>
+        <a href="htmlproject/index.html" target="_blank"><img src="images/htmlp.PNG" alt="Black Ace"></a>
+      </li>
+      <li>
+        <a href="cssproject/index.html" target="_blank"><img src="images/cssp.PNG" alt="First State Bank"></a>
+      </li>
+      <li>
+        <a href="gridproject/index.html" target="_blank"><img src="images/cssgridp.PNG" alt="Custom Aire"></a>
+      </li>
+      <li>
+        <a href="javascriptproject/index.html" target="_blank"><img src="images/jsp.PNG" alt="First State Bank"></a>
+      </li>
+      <li>
+        <a href="htmlproject/index.html" target="_blank"><img src="images/htmlp.PNG" alt="Black Ace"></a>
+      </li>
+      <li>
+        <a href="cssproject/index.html" target="_blank"><img src="images/cssp.PNG" alt="First State Bank"></a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+    <div id="about-information" style="display:none">
+      <h2 class="about-header">About</h2>
+      I am an enthusiastic junior web developer. Determined, motivated and passionate about making a success of my career.I am a self starter with a positive attitude. I am a 19 year old who is excited to start my career as a web developer, especially to further develop my creative aptitude. When I am not coding, I like to spend my time playing football and gaming.
+    </div>
+
+    <div id="education-information" style="display:none">
+      <h2 class="edu-header">Education</h2>
+      Life Choices Academy — Web Development (6 months full-time course): 2017
+      <br>
+      The Lifechoices Academy is a full-time program which empowers youth from the Cape Flats with life, practical and professional development skills. We did intensive study of the following web development languages: HTML, CSS, jQuery, JavaScript and Sass. As part of our professional development, we had the opportunity to use online resources such as MOOCs, were taught Design Thinking and made use of resources for personal reflection, such as DISC profiles and SMART goal setting. Taking part in this program has been an incredible experiance for me.
+      <br><br>
+      High School:
+      Matric 2017: Bachalors pass
+    </div>
+
+
+    <script type="text/javascript">
+      $("#about-info").click(function() {
+        $("#about-information").show()
+      });
+
+      $("#education-info").click(function() {
+        $("#education-information").show()
+      });
+
+      $("#about-info").click(function() {
+        $("#education-information").hide()
+      });
+
+      $("#education-info").click(function() {
+        $("#about-information").hide()
+      });
+
+      $("#education-info").click(function() {
+        $("#clients").hide()
+      });
+
+      $("#about-info").click(function() {
+        $("#clients").hide()
+      });
+
+      $("#home-info").click(function() {
+        $("#about-information").hide()
+      });
+
+      $("#home-info").click(function() {
+        $("#clients").show()
+      });
+
+      $("#home-info").click(function() {
+        $("#education-information").hide()
+      });
+
+      $(function() {
+
+var $clientcarousel = $('#clients-list');
+var clients = $clientcarousel.children().length;
+var clientwidth = (clients * 220);
+$clientcarousel.css('width', clientwidth);
+
+var rotating = true;
+var clientspeed = 0;
+var seeclients = setInterval(rotateClients, clientspeed);
+
+$(document).on({
+mouseenter: function() {
+rotating = false;
+},
+mouseleave: function() {
+rotating = true;
+}
+}, '#clients');
+
+function rotateClients() {
+if (rotating != false) {
+var $first = $('#clients-list li:first');
+$first.animate({
+  'margin-left': '-220px'
+}, 2000, function() {
+  $first.remove().css({
+    'margin-left': '0px'
+  });
+  $('#clients-list li:last').after($first);
+});
+}
+}
+});
+
+
+    </script>
+
+  </body>
+</html>
