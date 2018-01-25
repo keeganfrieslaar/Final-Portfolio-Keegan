@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Keegans Portfolio</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
@@ -96,6 +97,8 @@
     <div id="about-information" style="display:none">
       <h2 class="about-header">About</h2>
       I am an enthusiastic junior web developer. Determined, motivated and passionate about making a success of my career.I am a self starter with a positive attitude. I am a 19 year old who is excited to start my career as a web developer, especially to further develop my creative aptitude. When I am not coding, I like to spend my time playing football and gaming.
+      <br>
+      <center><a href="https://www.linkedin.com/in/keegan-frieslaar-1a259a150/" target="_blank"><img class="social-media" src="images/linkedin.png"></a> <a href="https://github.com/keeganfrieslaar" target="_blank"><img class="social-media" src="images/github.png"></a></center>
     </div>
 
     <div id="education-information" style="display:none">
@@ -104,46 +107,47 @@
       <br>
       The Lifechoices Academy is a full-time program which empowers youth from the Cape Flats with life, practical and professional development skills. We did intensive study of the following web development languages: HTML, CSS, jQuery, JavaScript and Sass. As part of our professional development, we had the opportunity to use online resources such as MOOCs, were taught Design Thinking and made use of resources for personal reflection, such as DISC profiles and SMART goal setting. Taking part in this program has been an incredible experiance for me.
       <br><br>
-      High School:
-      Matric 2017: Bachalors pass
+      High School: Bergvliet High
+      <br>
+      Matric 2016: Bachalors pass
     </div>
 
 
     <script type="text/javascript">
       $("#about-info").click(function() {
-        $("#about-information").show()
+        $("#about-information").fadeIn(3000)
       });
 
       $("#education-info").click(function() {
-        $("#education-information").show()
+        $("#education-information").fadeIn(3000)
       });
 
       $("#about-info").click(function() {
-        $("#education-information").hide()
+        $("#education-information").fadeOut(500)
       });
 
       $("#education-info").click(function() {
-        $("#about-information").hide()
+        $("#about-information").fadeOut(500)
       });
 
       $("#education-info").click(function() {
-        $("#clients").hide()
+        $("#clients").fadeOut(500)
       });
 
       $("#about-info").click(function() {
-        $("#clients").hide()
+        $("#clients").fadeOut(500)
       });
 
       $("#home-info").click(function() {
-        $("#about-information").hide()
+        $("#about-information").fadeOut(500)
       });
 
       $("#home-info").click(function() {
-        $("#clients").show()
+        $("#clients").fadeIn(3000)
       });
 
       $("#home-info").click(function() {
-        $("#education-information").hide()
+        $("#education-information").fadeOut(500)
       });
 
       $(function() {
