@@ -21,7 +21,7 @@
 }
 
 body {
-  background-image: url(images/blackwallpaper.jpg);
+  background-image: url(images/space.gif);
   font-family: 'Secular One', sans-serif;
 }
 #front-grid {
@@ -34,15 +34,18 @@ body {
   max-width: 100%;
   grid-row: 1/10;
   grid-column: 1/2;
-  filter: grayscale(100%);
-  transition: 1s;
+  filter: grayscale(50%);
+  transition: 1s ease-in;
 }
 #portfolio-image:hover {
   filter: none;
 }
+
+
+
 #personal-information {
   padding-left: 30px;
-  background-image: url(images/blackwallpaper.jpg);
+  background-image: url(images/space.gif);
   grid-row: 1/9;
   grid-column: 2/3;
   color: white;
@@ -53,6 +56,7 @@ body {
 }
 #myname {
   font-size: 40px;
+  color: #23A6D5;
 }
 #job-title {
   font-size: 25px;
@@ -60,24 +64,30 @@ body {
 #contact-information {
   font-size: 20px;
 }
-#myname {
-  color: darkblue;
-}
 #navbar {
-  background-color: darkblue;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
 .navbar-headings {
-  transition: 1s;
+  transition: 0.5s ease-in;
   text-align: center;
   text-decoration: none;
   color: black;
   font-size: 35px;
 }
 .navbar-headings:hover {
-  background-color: dimgrey;
+  background-color: #23D5AB;
   cursor: pointer;
+}
+#home-info:hover {
+  background-color: #EE7752;
+}
+#about-info:hover {
+  background-color: #E73C7E;
+}
+#education-info:hover {
+  background-color: #9400D3;
 }
 
 th {
@@ -86,7 +96,7 @@ th {
 #about-information {
   font-size: 25px;
   display: grid;
-  background-image: url(images/blackwallpaper.jpg);
+  background-image: url(images/space.gif);
   color: white;
   text-align: center;
   padding-bottom: 18px;
@@ -97,7 +107,7 @@ th {
 #education-information {
   font-size: 25px;
   display: grid;
-  background-image: url(images/blackwallpaper.jpg);
+  background-image: url(images/space.gif);
   color: white;
   text-align: center;
   padding-bottom: 18px;
@@ -105,13 +115,13 @@ th {
 #background {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  background-image: url(images/blackwallpaper.jpg);
+  background-image: url(images/space.gif);
   width: 100%;
   height: 187px;
 }
 
 #clients {
-background-image: url(images/blackwallpaper.jpg);
+background-image: url(images/space.gif);
 display: block;
 margin-left: auto;
 margin-right: auto;
