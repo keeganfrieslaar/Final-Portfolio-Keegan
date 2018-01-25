@@ -29,7 +29,11 @@
     font-size: 24px;
   }
 }
-
+@media only screen and (max-width: 440px) {
+  .navbar-headings {
+    font-size: 15px;
+  }
+}
 body {
   background-image: url(images/blackwallpaper.jpg);
   font-family: 'Secular One', sans-serif;
