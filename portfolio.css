@@ -1,26 +1,49 @@
+@media only screen and (min-width: 1320px) {
+  #front-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(12,1fr);
+  }
+  #portfolio-image {
+    opacity: 0.95;
+    height: 100%;
+    width: 100%;
+    grid-row: 1/13;
+    grid-column: 1/2;
+  }
+  #personal-information {
+    padding-left: 30px;
+    background-image: url(images/blackwallpaper.jpg);
+    grid-row: 1/12;
+    grid-column: 2/3;
+    color: white;
+  }
+}
+
 body {
-  background-image: url(images/blackwallpaper.jpg);
+  background-color: black;
   font-family: 'Secular One', sans-serif;
 }
 #front-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(12,1fr);
+  grid-template-rows: repeat(9,1fr);
 }
 #portfolio-image {
   opacity: 0.95;
   height: 100%;
-  width: 100%;
-  grid-row: 1/13;
+  max-width: 100%;
+  grid-row: 1/10;
   grid-column: 1/2;
 }
 #personal-information {
   padding-left: 30px;
   background-image: url(images/blackwallpaper.jpg);
-  grid-row: 1/12;
+  grid-row: 1/9;
   grid-column: 2/3;
   color: white;
 }
+
 #intro-message {
   font-size: 30px;
 }
