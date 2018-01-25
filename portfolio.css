@@ -18,6 +18,9 @@
     grid-column: 2/3;
     color: white;
   }
+  #stick-gif {
+    height: 120px;
+  width: 90px;
 }
 
 body {
