@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: black;
+  background-image: url(images/blackwallpaper.jpg);
   font-family: 'Secular One', sans-serif;
 }
 #front-grid {
@@ -30,11 +30,15 @@ body {
   grid-template-rows: repeat(9,1fr);
 }
 #portfolio-image {
-  opacity: 0.95;
   height: 100%;
   max-width: 100%;
   grid-row: 1/10;
   grid-column: 1/2;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+#portfolio-image:hover {
+  filter: none;
 }
 #personal-information {
   padding-left: 30px;
