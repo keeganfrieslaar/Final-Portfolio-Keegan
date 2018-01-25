@@ -21,6 +21,13 @@
   #stick-gif {
     height: 120px;
     width: 90px;
+  }
+  #projects {
+    font-size: 40px;
+  }
+  #view {
+    font-size: 24px;
+  }
 }
 
 body {
