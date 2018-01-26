@@ -2,40 +2,26 @@
   #front-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(13,1fr);
+    grid-template-rows: repeat(12,1fr);
   }
   #portfolio-image {
     opacity: 0.95;
     height: 100%;
     width: 100%;
-    grid-row: 1/14;
+    grid-row: 1/13;
     grid-column: 1/2;
   }
   #personal-information {
     padding-left: 30px;
-    background-image: url(images/blackwallpaper.jpg);
-    grid-row: 1/13;
+    background-color: black;
+    grid-row: 1/12;
     grid-column: 2/3;
     color: white;
   }
-  #stick-gif {
-    height: 120px;
-    width: 90px;
-  }
-  #projects {
-    font-size: 40px;
-  }
-  #view {
-    font-size: 24px;
-  }
 }
-@media only screen and (max-width: 440px) {
-  .navbar-headings {
-    font-size: 15px;
-  }
-}
+
 body {
-  background-image: url(images/blackwallpaper.jpg);
+  background-color: #1a1a1a;
   font-family: 'Secular One', sans-serif;
 }
 #front-grid {
@@ -48,23 +34,21 @@ body {
   max-width: 100%;
   grid-row: 1/10;
   grid-column: 1/2;
-  filter: grayscale(50%);
-  transition: 1s ease-in;
+  filter: grayscale(100%);
+  transition: 2s ease-in;
 }
-#portfolio-image:hover {
-  filter: none;
-}
+
 #stick-gif {
-  height: 80px;
-  width: 60px;
-  padding-left: 50px;
-  filter: contrast(100%);
+  height: 200px;
+  width: 160px;
+  padding-left: 70px;
+  position:absolute;
 }
 
 
 #personal-information {
   padding-left: 30px;
-  background-image: url(images/blackwallpaper.jpg);
+  background-color: #1a1a1a;
   grid-row: 1/9;
   grid-column: 2/3;
   color: white;
@@ -75,7 +59,8 @@ body {
 }
 #myname {
   font-size: 35px;
-  color: #23A6D5;
+  color: white;
+  transition: 2s ease-in;
 }
 #job-title {
   font-size: 25px;
@@ -84,33 +69,23 @@ body {
   font-size: 20px;
 }
 #navbar {
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: #1a1a1a;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  filter: opacity(70%);
+  transition: 2s ease-in;
 }
+
 .navbar-headings {
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-in-out;
   text-align: center;
   text-decoration: none;
   color: black;
   font-size: 35px;
 }
 .navbar-headings:hover {
-  background-color: #23D5AB;
+  color: white;
+  background-color: #1a1a1a;
   cursor: pointer;
-  filter: none;
-}
-#home-info:hover {
-  background-color: #EE7752;
-  filter: none;
-}
-#about-info:hover {
-  background-color: #E73C7E;
-  filter: none;
-}
-#education-info:hover {
-  background-color: #9400D3;
   filter: none;
 }
 
@@ -120,7 +95,7 @@ th {
 #about-information {
   font-size: 25px;
   display: grid;
-  background-image: url(images/blackwallpaper.jpg);
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
   padding-bottom: 18px;
@@ -131,7 +106,7 @@ th {
 #education-information {
   font-size: 25px;
   display: grid;
-  background-image: url(images/blackwallpaper.jpg);
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
   padding-bottom: 18px;
@@ -139,13 +114,13 @@ th {
 #background {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  background-image: url(images/blackwallpaper.jpg);
+  background-color: #1a1a1a;
   width: 100%;
   height: 187px;
 }
 
 #clients {
-background-image: url(images/blackwallpaper.jpg);
+background-color: #1a1a1a;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -202,4 +177,8 @@ opacity: 1.0;
 .social-media {
   height: 50px;
   width: 50px;
+}
+#words {
+  font-size: 10px;
+  padding-left: 20px;
 }

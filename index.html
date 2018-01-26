@@ -17,7 +17,7 @@
       <div id="personal-information">
         <h2 id="intro-message">Welcome to:</h2>
         <h1 id="myname">Keegan Frieslaar</h1>
-        <p id="job-title">Junior Web Developer and Gamer <img id="stick-gif" src="images/terry-2x.gif"></p>
+        <p id="job-title">Junior Web Developer and Gamer <img id="stick-gif" src="images/terry-2x.gif"><span id="words">("hover on me")</span></p>
 
         <table id="contact-information">
           <tr>
@@ -96,7 +96,7 @@
 
     <div id="about-information" style="display:none">
       <h2 class="about-header">About</h2>
-      I am an enthusiastic junior web developer. Determined, motivated and passionate about making a success of my career.I am a self starter with a positive attitude. I am a 19 year old who is excited to start my career as a web developer, especially to further develop my creative aptitude. When I am not coding, I like to spend my time playing football and gaming.
+      I am an enthusiastic junior web developer. Determined, motivated and passionate about making a success of my career. I am a self starter with a positive attitude. I am excited to start my career as a web developer, especially to further develop my creative aptitude. When I am not coding, I like to spend my time playing football and gaming.
       <br>
       <center><a href="https://www.linkedin.com/in/keegan-frieslaar-1a259a150/" target="_blank"><img class="social-media" src="images/linkedin.png"></a> <a href="https://github.com/keeganfrieslaar" target="_blank"><img class="social-media" src="images/github.png"></a></center>
     </div>
@@ -109,44 +109,26 @@
       <br><br>
       High School: Bergvliet High
       <br>
-      Matric 2016: Bachalors pass
+      Matric 2016: Bachelors pass
     </div>
 
 
     <script type="text/javascript">
       $("#about-info").click(function() {
         $("#about-information").fadeIn(3000)
+        $("#education-information").fadeOut(500)
+        $("#clients").fadeOut(500)
       });
 
       $("#education-info").click(function() {
         $("#education-information").fadeIn(3000)
-      });
-
-      $("#about-info").click(function() {
-        $("#education-information").fadeOut(500)
-      });
-
-      $("#education-info").click(function() {
         $("#about-information").fadeOut(500)
-      });
-
-      $("#education-info").click(function() {
-        $("#clients").fadeOut(500)
-      });
-
-      $("#about-info").click(function() {
         $("#clients").fadeOut(500)
       });
 
       $("#home-info").click(function() {
         $("#about-information").fadeOut(500)
-      });
-
-      $("#home-info").click(function() {
         $("#clients").fadeIn(3000)
-      });
-
-      $("#home-info").click(function() {
         $("#education-information").fadeOut(500)
       });
 
@@ -186,6 +168,11 @@ $first.animate({
 });
 
 
+$("#stick-gif").hover(function() {
+  $("#portfolio-image").css("filter", "none");
+  $("#navbar").css("background", "#23A6D5");
+  $("#myname").css("color", "#23A6D5");
+});
 
 
     </script>
