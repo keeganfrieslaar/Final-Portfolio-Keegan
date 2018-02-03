@@ -17,7 +17,7 @@
       <div id="personal-information">
         <h2 id="intro-message">Welcome to:</h2>
         <h1 id="myname">Keegan Frieslaar</h1>
-        <p id="job-title">Junior Web Developer and Gamer <img id="stick-gif" src="images/terry-2x.gif"><span id="words">("hover on me")</span></p>
+        <p id="job-title">Junior Web Developer and Gamer <img id="stick-gif" src="images/terry-2x.gif"><span id="words">(Hit me)</span></p>
 
         <table id="contact-information">
           <tr>
@@ -95,21 +95,29 @@
 </div>
 
     <div id="about-information" style="display:none">
-      <h2 class="about-header">About</h2>
-      I am an enthusiastic junior web developer. Determined, motivated and passionate about making a success of my career. I am a self starter with a positive attitude. I am excited to start my career as a web developer, especially to further develop my creative aptitude. When I am not coding, I like to spend my time playing football and gaming.
-      <br>
-      <center><a href="https://www.linkedin.com/in/keegan-frieslaar-1a259a150/" target="_blank"><img class="social-media" src="images/linkedin.png"></a> <a href="https://github.com/keeganfrieslaar" target="_blank"><img class="social-media" src="images/github.png"></a></center>
+      <h2 class="about-header">About:</h2>
+      <p> I am an enthusiastic junior web developer. Determined, motivated and passionate about making a success of my career. I am a self starter with a positive attitude. I am excited to start my career as a web developer, especially to further develop my creative aptitude. When I am not coding, I like to spend my time gaming and playing football. I started gaming on console or Playstation 2, gradually moving along with the Playstation franchise ending on the PS4. Not long after the PS4's release, I quickly realised that PC gaming is far superior and changed immediately. Now, im constantly at my desk either coding or gaming. I see myself as a very successful game developer within the next 5 years. I have also dabbled in acting with my largest screening being an extra role in the 2012 movie shot in Cape Town, Dredd. I don't have much workplace experiance yet, but i am very eager to learn alongside those who have more experiance. A work environment within which i can learn as much as possible is what I am currently looking for at this point on my journey. I enjoy team oriented or solo work and I strive under pressure. I always work according to specifications but allow innovative ideas to take over when needed.
+      </p>
+      <h4 class="about-header">Extra:</h4>
+      <p>Drivers License: Code B</p>
+      <center><a href="https://www.linkedin.com/in/keegan-frieslaar-1a259a150/" target="_blank"><img class="social-media" src="images/linkedin.png"></a>
+        <a href="https://github.com/keeganfrieslaar" target="_blank"><img class="social-media" src="images/github.png"></a>
+        <a href="http://www.imdb.com/title/tt1343727/" target="_blank"><img class="social-media2"  src="images/imdb.png"></a>
+      </center>
+      <button class="btn btn-primary scroll-top" data-scroll="up" type="button"><img class="arrow" src="images/arrow-up.png"></button>
     </div>
 
     <div id="education-information" style="display:none">
       <h2 class="edu-header">Education</h2>
-      Life Choices Academy — Web Development (6 months full-time course): 2017
-      <br>
-      The Lifechoices Academy is a full-time program which empowers youth from the Cape Flats with life, practical and professional development skills. We did intensive study of the following web development languages: HTML, CSS, jQuery, JavaScript and Sass. As part of our professional development, we had the opportunity to use online resources such as MOOCs, were taught Design Thinking and made use of resources for personal reflection, such as DISC profiles and SMART goal setting. Taking part in this program has been an incredible experiance for me.
-      <br><br>
-      High School: Bergvliet High
-      <br>
-      Matric 2016: Bachelors pass
+      <p>Life Choices Academy — Web Development (6 months full-time course): 2017</p>
+      <p>The Lifechoices Academy is a full-time program which empowers youth from the Cape Flats with life, practical and professional development skills. We did intensive study of the following web development languages: HTML, CSS, jQuery, JavaScript and Sass. As part of our professional development, we had the opportunity to use online resources such as MOOCs, were taught Design Thinking and made use of resources for personal reflection, such as DISC profiles and SMART goal setting. Taking part in this program has been an incredible experiance for me.</p>
+      <p>High School: Bergvliet High
+      Matric 2016- Bachelors pass</p>
+      <p class="references">References:<br>
+        Candice Amon-021 696 4157  (Life Choices Academy)
+        <br>
+        Bergvliet High-021 712 0284<p>
+        <button class="btn btn-primary scroll-top" data-scroll="up" type="button"><img class="arrow" src="images/arrow-up.png"></button>
     </div>
 
 
@@ -172,6 +180,22 @@ $("#stick-gif").hover(function() {
   $("#portfolio-image").css("filter", "none");
   $("#navbar").css("background", "#23A6D5");
   $("#myname").css("color", "#23A6D5");
+});
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            $('.scroll-top').fadeIn();
+        } else {
+            $('.scroll-top').fadeOut();
+        }
+    });
+    $('.scroll-top').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
 });
 
 

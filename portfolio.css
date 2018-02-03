@@ -177,8 +177,29 @@ opacity: 1.0;
 .social-media {
   height: 50px;
   width: 50px;
+  padding-left: 20px;
+}
+.social-media2 {
+  height: 50px;
+  width: 80px;
 }
 #words {
-  font-size: 10px;
-  padding-left: 20px;
+  font-size: 20px;
+  padding-left: 12px;
+}
+.imdb {
+  width: 3.8%;
+  height: 3.8%;
+}
+
+.scroll-top {
+  display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+}
+
+.arrow {
+  width: 30px;
+  height: 40px;
 }
