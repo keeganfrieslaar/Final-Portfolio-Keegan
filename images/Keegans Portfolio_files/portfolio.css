@@ -1,0 +1,205 @@
+@media only screen and (min-width: 1320px) {
+  #front-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(12,1fr);
+  }
+  #portfolio-image {
+    opacity: 0.95;
+    height: 100%;
+    width: 100%;
+    grid-row: 1/13;
+    grid-column: 1/2;
+  }
+  #personal-information {
+    padding-left: 30px;
+    background-color: black;
+    grid-row: 1/12;
+    grid-column: 2/3;
+    color: white;
+  }
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: 'Secular One', sans-serif;
+}
+#front-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(9,1fr);
+}
+#portfolio-image {
+  height: 100%;
+  max-width: 100%;
+  grid-row: 1/10;
+  grid-column: 1/2;
+  filter: grayscale(100%);
+  transition: 2s ease-in;
+}
+
+#stick-gif {
+  height: 200px;
+  width: 160px;
+  padding-left: 70px;
+  position:absolute;
+}
+
+
+#personal-information {
+  padding-left: 30px;
+  background-color: #1a1a1a;
+  grid-row: 1/9;
+  grid-column: 2/3;
+  color: white;
+}
+
+#intro-message {
+  font-size: 25px;
+}
+#myname {
+  font-size: 35px;
+  color: white;
+  transition: 2s ease-in;
+}
+#job-title {
+  font-size: 25px;
+}
+#contact-information {
+  font-size: 20px;
+}
+#navbar {
+  background: #1a1a1a;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  transition: 2s ease-in;
+}
+
+.navbar-headings {
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+.navbar-headings:hover {
+  color: white;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  filter: none;
+}
+
+th {
+  text-align: left;
+}
+#about-information {
+  font-size: 25px;
+  display: grid;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding-bottom: 18px;
+}
+.about-header {
+  font-size: 30px;
+}
+#education-information {
+  font-size: 25px;
+  display: grid;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding-bottom: 18px;
+}
+#background {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 187px;
+}
+
+#clients {
+background-color: #1a1a1a;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#clients .clients-wrap {
+display: block;
+max-width: 95%;
+margin: 0 auto;
+overflow: hidden;
+}
+#clients .clients-wrap ul {
+display: block;
+list-style: none;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+}
+#clients .clients-wrap ul li {
+display: block;
+float: left;
+position: relative;
+max-width: 220px;
+height: 100px;
+line-height: 0px;
+text-align: center;
+}
+#clients .clients-wrap ul li img {
+vertical-align: middle;
+max-width: 100%;
+max-height: 100%;
+-webkit-transition: 0 linear left;
+-moz-transition: 0 linear left;
+transition: 0 linear left;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+filter: alpha(opacity=65);
+opacity: 0.65;
+}
+#clients .clients-wrap ul li img:hover {
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+opacity: 1.0;
+}
+#projects {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+}
+#view {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+.social-media {
+  height: 50px;
+  width: 50px;
+  padding-left: 20px;
+}
+.social-media2 {
+  height: 50px;
+  width: 80px;
+}
+#words {
+  font-size: 20px;
+  padding-left: 12px;
+}
+.imdb {
+  width: 3.8%;
+  height: 3.8%;
+}
+
+.scroll-top {
+  display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+}
+
+.arrow {
+  width: 30px;
+  height: 40px;
+}
